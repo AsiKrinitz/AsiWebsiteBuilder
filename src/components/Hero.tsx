@@ -22,14 +22,7 @@ export function Hero() {
         <div className="hero-image-wrapper">
           <div className="image-presentation">
             <div className="image-ring"></div>
-            <img src="/Asi17.jpeg" alt="אסי קריניץ" className="hero-avatar" />
-            
-            <div className="floating-badge badge-top">
-              <span>👨‍💻</span> מתכנת פולסטאק
-            </div>
-            <div className="floating-badge badge-bottom">
-              <span>🚀</span> אתרים ממירים
-            </div>
+            <img src="./Asi17.jpeg" alt="אסי קריניץ" className="hero-avatar" />
           </div>
         </div>
       </div>
