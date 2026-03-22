@@ -10,9 +10,6 @@ export function About() {
             אני דוגל בשקיפות, יחס אישי, פיתוח מהיר (בלי להתפשר על האיכות), ומצוינות אישית בסטנדרטים הגבוהים ביותר, כך שהחנות או שירותי העסק שלך ישקפו את מי שאתה בצורה הטובה ביותר ברשת.
          </p>
          <div style={{marginTop: '3rem'}}>
-           <a href="/cv.pdf" target="_blank" download className="btn-primary btn-large" style={{boxShadow: '0 4px 20px rgba(220, 38, 38, 0.4)'}}>
-             📄 צפייה והורדת קורות חיים 
-           </a>
          </div>
       </div>
     </section>

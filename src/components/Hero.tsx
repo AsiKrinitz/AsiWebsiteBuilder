@@ -21,7 +21,6 @@ export function Hero() {
         </div>
         <div className="hero-image-wrapper">
           <div className="image-presentation">
-            <div className="image-ring"></div>
             <img src="./Asi17.jpeg" alt="אסי קריניץ" className="hero-avatar" />
           </div>
         </div>
