@@ -1,4 +1,5 @@
 export function Projects() {
+  
   return (
     <section id="projects" className="projects">
       <div className="container">
