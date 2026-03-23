@@ -7,6 +7,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 import { Projects } from './components/Projects'
 import { Pricing } from './components/Pricing'
+import { TechComparison } from './components/TechComparison'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main>
         <Hero />
         <Services />
+        <TechComparison />
         <Projects />
         <Pricing />
         <About />

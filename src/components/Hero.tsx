@@ -8,20 +8,25 @@ export function Hero() {
       <div className="container hero-content">
         <div className="hero-text">
           <h1 className="hero-title">
-            בניית אתרים מנצחים<br />
-            <span className="gradient-text">לעסק שלך</span>
+            בניית אתרי <span className="gradient-text">React</span> <br />
+            שמוכרים בשבילך
           </h1>
           <p className="hero-subtitle">
-            אני אסי קריניץ, מפתח אתרים. מתמחה בבניית אתרי תדמית ודפי נחיתה מתקדמים, מעוצבים ומהירים שבולטים ומושכים לקוחות חדשים.
+            אני אסי קריניץ, מתכנת בעל מעל **3 שנות ניסיון** בפיתוח מערכות. מתמחה בבניית דפי נחיתה
+            ואתרי תדמית בטכנולוגיית React המתמרצת את הביצועים של העסק שלך לשיא.
           </p>
           <div className="hero-buttons">
-            <a href="#contact" className="btn-primary btn-large">צרו קשר</a>
-            <a href="#services" className="btn-outline btn-large">השירותים שלי</a>
+            <a href="#tech-comparison" className="btn-primary btn-large">
+              למה React?
+            </a>
+            <a href="#projects" className="btn-outline btn-large">
+              תיק עבודות
+            </a>
           </div>
         </div>
         <div className="hero-image-wrapper">
           <div className="image-presentation">
-            <img src="./Asi17.jpeg" alt="אסי קריניץ" className="hero-avatar" />
+            <img src="./hero-wow.png" alt="Futuristic Web Agency" className="hero-avatar" />
           </div>
         </div>
       </div>
