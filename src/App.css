@@ -104,21 +104,17 @@
 
 /* Header */
 .header {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
   transition: var(--transition-smooth);
-  padding: 2rem 0;
-}
-
-.header.scrolled {
-  background: rgba(2, 6, 23, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  padding: 1.25rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 0.75rem 0;
+  background: rgba(248, 250, 252, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .header-content {
@@ -157,7 +153,7 @@
 
 .nav button:not(.btn-primary) {
   font-weight: 600;
-  color: var(--text-muted);
+  color: #475569;
   transition: var(--transition-smooth);
 }
 
@@ -168,12 +164,12 @@
   right: 0;
   width: 0;
   height: 2px;
-  background: var(--primary);
+  background: var(--secondary);
   transition: var(--transition-smooth);
 }
 
 .nav button:not(.btn-primary):hover {
-  color: var(--text-main);
+  color: #0f172a;
 }
 
 .nav button:not(.btn-primary):hover::after,

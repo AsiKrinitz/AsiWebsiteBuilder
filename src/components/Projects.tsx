@@ -79,7 +79,7 @@ export function Projects() {
               >
                 <span className="tag">React</span>
                 <span className="tag">Vite</span>
-                <span className="tag">GH Pages</span>
+   
               </div>
               <div
                 className="project-actions"

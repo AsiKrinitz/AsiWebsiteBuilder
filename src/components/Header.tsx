@@ -1,25 +1,14 @@
-import { useEffect, useState } from 'react'
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false)
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 20)
-    }
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
-
   return (
-    <header className={`header ${scrolled ? 'scrolled' : ''}`}>
+    <header className="header">
       <div className="container header-content">
         <div
           className="logo"
-          style={{ cursor: 'pointer' }}
+          style={{ cursor: 'pointer', display: 'flex', alignItems: 'center' }}
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         >
-          <span className="logo-accent">ASI</span> DESIGN
+          <img src="./ak_logo2.png" alt="ASI Design Logo" style={{ height: '100px', objectFit: 'contain' }} />
         </div>
         <nav className="nav">
           <button
