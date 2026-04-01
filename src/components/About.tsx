@@ -3,7 +3,7 @@ export function About() {
     <section id="about" className="about">
       <div className="container about-content">
         <div className="image-presentation">
-          <img src="./Asi17.jpeg" alt="אסי קריניץ" className="hero-avatar" />
+          <img src="./asiNiceOffice.jpeg" alt="אסי קריניץ" className="hero-avatar" />
         </div>
         <div className="about-text-container">
           <h2 className="section-title" style={{ textAlign: 'right' }}>
