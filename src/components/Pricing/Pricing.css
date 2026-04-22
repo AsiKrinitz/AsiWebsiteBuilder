@@ -1,58 +1,131 @@
 .pricing {
-  padding: 10rem 0;
+  padding-bottom: 8rem;
 }
 
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
-  gap: 2.5rem;
-  align-items: flex-start;
+.pricing-header {
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.pricing-card {
-  padding: 4rem 3rem;
-  position: relative;
+.pricing-subtitle {
+  color: var(--text-muted);
+  font-size: 1.2rem;
+  margin-top: -3rem;
+  margin-bottom: 2rem;
+}
+
+.single-pricing-container {
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
 }
 
-.pricing-card.featured {
-  padding: 5rem 3rem;
-  border: 1px solid var(--primary);
-  background: linear-gradient(135deg, rgba(15, 23, 42, 0.9), rgba(112, 0, 255, 0.1));
-  transform: translateY(-20px);
+.single-card {
+  max-width: 600px;
+  width: 100%;
+  padding: 4rem 3rem !important;
+  position: relative;
+  border: 1px solid var(--primary-glow) !important;
+  box-shadow: 0 0 50px rgba(0, 242, 255, 0.1) !important;
 }
 
-.pricing-card.featured::before {
-  content: 'הכי משתלם';
+.card-badge {
   position: absolute;
   top: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #000;
-  padding: 0.25rem 1rem;
-  border-radius: 99px;
-  font-size: 0.8rem;
-  font-weight: 900;
+  padding: 0.5rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px var(--primary-glow);
+}
+
+.price-container {
+  text-align: center;
+  margin: 2.5rem 0;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  font-size: 1.5rem;
+  opacity: 0.6;
 }
 
 .price {
-  font-size: 3.5rem;
+  font-size: 5rem;
   font-weight: 900;
-  margin-bottom: 2rem;
+  line-height: 1;
+  color: var(--text-main);
+  margin: 0.5rem 0;
+}
+
+.price-label {
   color: var(--primary);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
 }
 
-.price span {
-  font-size: 1rem;
+.service-description {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.service-description li {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.check-icon {
+  color: var(--primary);
+  font-weight: 900;
+  font-size: 1.4rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.service-description strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--text-main);
+  margin-bottom: 0.25rem;
+}
+
+.service-description p {
+  font-size: 0.95rem;
   color: var(--text-muted);
-  font-weight: 400;
+  line-height: 1.5;
 }
 
-@media (max-width: 768px) {
-  .pricing-card.featured {
-    transform: none;
+.contact-btn {
+  width: 100%;
+  padding: 1.25rem !important;
+  font-size: 1.25rem !important;
+}
+
+@media (max-width: 600px) {
+  .single-card {
+    padding: 3rem 1.5rem !important;
+  }
+  
+  .price {
+    font-size: 4rem;
+  }
+  
+  .pricing-subtitle {
+    margin-top: -2rem;
+    font-size: 1rem;
   }
 }

@@ -8,6 +8,8 @@ import { TechComparison } from './components/TechComparison/TechComparison';
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
+import { Reviews } from './components/Reviews/Reviews';
+import { Pricing } from './components/Pricing/Pricing';
 
 function App() {
   return (
@@ -31,6 +33,16 @@ function App() {
             <Route path="/about" element={
               <div className="page-padding">
                 <About />
+              </div>
+            } />
+            <Route path="/reviews" element={
+              <div className="page-padding">
+                <Reviews />
+              </div>
+            } />
+            <Route path="/pricing" element={
+              <div className="page-padding">
+                <Pricing />
               </div>
             } />
             <Route path="/contact" element={
