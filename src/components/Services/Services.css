@@ -1,0 +1,44 @@
+.services {
+  padding: 10rem 0;
+  position: relative;
+  z-index: 10;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+  gap: 2.5rem;
+}
+
+.service-card {
+  padding: 3.5rem 2.5rem;
+  text-align: right;
+  border-bottom: 4px solid transparent;
+  transition: var(--transition-smooth);
+}
+
+.service-card:hover {
+  transform: translateY(-15px) rotateX(5deg) rotateY(-5deg);
+  border-bottom-color: var(--primary);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.service-icon {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  display: block;
+  filter: drop-shadow(0 0 15px var(--primary-glow));
+}
+
+.service-title {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+.service-description {
+  color: var(--text-muted);
+  line-height: 1.8;
+  font-size: 1.05rem;
+}

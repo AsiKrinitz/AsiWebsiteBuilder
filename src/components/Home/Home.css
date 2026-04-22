@@ -1,0 +1,26 @@
+.home-intro {
+  padding: 5rem 0 10rem;
+}
+
+.intro-card {
+  padding: 4rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-card h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.intro-card p {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+.intro-card p:last-child {
+  margin-bottom: 0;
+}

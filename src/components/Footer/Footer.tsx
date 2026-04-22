@@ -13,7 +13,7 @@ export function Footer() {
             rel="noopener noreferrer"
           >
             פייסבוק&nbsp;
-            <img alt="Facebook icon" src="Facebook_logo.png" />
+            <img alt="Facebook icon" src="/Facebook_logo.png" />
           </a>
         </li>
 
@@ -24,7 +24,7 @@ export function Footer() {
             rel="noopener noreferrer"
           >
             אינסטגרם&nbsp;
-            <img alt="Instagram icon" src="Instagram_logo.png" />
+            <img alt="Instagram icon" src="/Instagram_logo.png" />
           </a>
         </li>
 
@@ -35,7 +35,7 @@ export function Footer() {
             rel="noopener noreferrer"
           >
             לינקדאין&nbsp;
-            <img alt="LinkedIn icon" src="Linkedin_logo.png" />
+            <img alt="LinkedIn icon" src="/Linkedin_logo.png" />
           </a>
         </li>
       </ul>

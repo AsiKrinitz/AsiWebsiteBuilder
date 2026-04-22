@@ -1,3 +1,5 @@
+import './Projects.css';
+
 export function Projects() {
   
   return (
@@ -7,7 +9,7 @@ export function Projects() {
           תיק <span className="gradient-text">עבודות</span>
         </h2>
         <div className="projects-grid">
-          {/* Project 1: Sagi King Of Balloons */}
+          {/* Project 1: שגיא מלך הבלונים - הפקות ואירועים */}
           <div className="glass-panel project-card" style={{ display: 'flex', flexDirection: 'column' }}>
             <div className="project-header" style={{ padding: '1.5rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
               <h3 className="service-title" style={{ color: 'var(--primary)', margin: 0, fontSize: '1.4rem' }}>
@@ -15,7 +17,7 @@ export function Projects() {
               </h3>
             </div>
             <div style={{ position: 'relative', flex: 1, overflow: 'hidden' }}>
-              <img src="/SagiScreen.png" alt="Sagi King Of Balloons" className="project-image" />
+              <img src="/SagiScreen.png" alt="שגיא מלך הבלונים" className="project-image" />
               <div className="project-overlay">
                 <p className="project-desc">
                   אתר קטלוג מרהיב לעיצובי בלונים לכל אירוע, הכולל גלריות תמונות מגוונות וחלוקה לקטגוריות.
@@ -43,7 +45,7 @@ export function Projects() {
             </div>
           </div>
 
-          {/* Project 2: ShiraSocial */}
+          {/* Project 2: שירה קידום עסקים בסושיאל */}
           <div className="glass-panel project-card" style={{ display: 'flex', flexDirection: 'column' }}>
             <div className="project-header" style={{ padding: '1.5rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
               <h3 className="service-title" style={{ color: 'var(--primary)', margin: 0, fontSize: '1.4rem' }}>
@@ -79,7 +81,7 @@ export function Projects() {
             </div>
           </div>
 
-          {/* Project 3: Asi Krinitz Fix PC */}
+          {/* Project 3: אסי טכנאי מחשבים - אתר לדוגמה */}
           <div className="glass-panel project-card" style={{ display: 'flex', flexDirection: 'column' }}>
             <div className="project-header" style={{ padding: '1.5rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
               <h3 className="service-title" style={{ color: 'var(--primary)', margin: 0, fontSize: '1.4rem' }}>
@@ -87,7 +89,7 @@ export function Projects() {
               </h3>
             </div>
             <div style={{ position: 'relative', flex: 1, overflow: 'hidden' }}>
-              <img src="/AsiPcScreen.png" alt="Asi Krinitz Fix PC" className="project-image" />
+              <img src="/AsiPcScreen.png" alt="אסי טכנאי מחשבים" className="project-image" />
               <div className="project-overlay">
                 <p className="project-desc">
                   פלטפורמה המציגה שירותי טכנאות מחשבים בחיפה עם חיבור ישיר ל-WhatsApp ותמיכה מרחוק.
@@ -152,5 +154,5 @@ export function Projects() {
         </div>
       </div>
     </section>
-  )
+  );
 }

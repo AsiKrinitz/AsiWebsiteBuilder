@@ -1,3 +1,5 @@
+import './Services.css';
+
 export function Services() {
   return (
     <section id="services" className="services">
@@ -25,6 +27,22 @@ export function Services() {
           </div>
 
           <div className="service-card glass-panel">
+            <div className="service-icon">⚡</div>
+            <h3 className="service-title">ביצועי React ומהירות שיא</h3>
+            <p className="service-description">
+              האתרים שאני בונה מבוססים על טכנולוגיית React, מה שמאפשר טעינה מיידית של דפים ללא ריענון הדפדפן. חווית גלישה חלקה ומהירה שגורמת ללקוחות להישאר יותר זמן באתר.
+            </p>
+          </div>
+
+          <div className="service-card glass-panel">
+            <div className="service-icon">🔗</div>
+            <h3 className="service-title">רכישת דומיין וניהול טכני</h3>
+            <p className="service-description">
+              אני דואג לכם לכתובת האתר (דומיין) ולהגדרות השרת. איך זה עובד? אנחנו בוחרים שם שמתאים לעסק, אני מבצע את הרכישה והקישור הטכני לאתר, כך שאתם מקבלים מוצר מוכן לעבודה "מפתח ביד".
+            </p>
+          </div>
+
+          <div className="service-card glass-panel">
             <div className="service-icon">📱</div>
             <h3 className="service-title">התאמה למובייל וקידום המרות</h3>
             <p className="service-description">
@@ -35,5 +53,5 @@ export function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }
