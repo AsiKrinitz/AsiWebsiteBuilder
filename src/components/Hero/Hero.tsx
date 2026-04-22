@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Hero.css';
 
 export function Hero() {
@@ -18,8 +19,8 @@ export function Hero() {
             עם אופטימיזציית SEO מלאה וביצועים ללא פשרות, האתר שלך יעבוד הכי טוב עבור העסק שלך וימשוך לקוחות חדשים.
           </p>
           <div className="hero-buttons">
-            <a href="projects" className="btn-primary btn-large">צפו בפרויקטים</a>
-            <a href="contact" className="btn-outline btn-large">התייעצות חינם</a>
+            <Link to="/projects" className="btn-primary btn-large">צפו בפרויקטים</Link>
+            <Link to="/contact" className="btn-outline btn-large">התייעצות חינם</Link>
           </div>
         </div>
         <div className="hero-image-wrapper">
