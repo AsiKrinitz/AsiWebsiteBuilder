@@ -63,10 +63,9 @@ export function Header() {
         {/* Mobile Nav Menu */}
         <nav className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
           <div className="mobile-nav-header">
-            <Link to="/" className="logo" onClick={scrollToTop}>
-              <img src="/ak_logo2.png" alt="ASI Design Logo" style={{ height: '80px', objectFit: 'contain' }} />
+            <Link to="/" className="logo mobile-logo" onClick={scrollToTop}>
+              <img src="/ak_logo2.png" alt="ASI Design Logo" style={{ height: '70px', objectFit: 'contain' }} />
             </Link>
-            <button className="close-menu" onClick={() => setIsMenuOpen(false)}>&times;</button>
           </div>
           <div className="mobile-nav-links">
             <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>בית</Link>
