@@ -33,7 +33,7 @@ export function Header() {
     <header className="header">
       <div className="container header-content">
         <Link to="/" className="logo" onClick={scrollToTop}>
-          <img src="/ak_logo2.png" alt="ASI Design Logo" style={{ height: '100px', objectFit: 'contain' }} />
+          <img src="/ak_logo2.png" alt="ASI Design Logo" style={{ height: '80px', objectFit: 'contain' }} />
         </Link>
         
         {/* Desktop Nav */}

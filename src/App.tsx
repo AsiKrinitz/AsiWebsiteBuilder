@@ -10,6 +10,7 @@ import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
 import { Reviews } from './components/Reviews/Reviews';
 import { Pricing } from './components/Pricing/Pricing';
+import { AsiFooter } from './components/AsiFooter/AsiFooter';
 
 function App() {
   return (
@@ -53,6 +54,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        <AsiFooter />
       </div>
     </Router>
   );
