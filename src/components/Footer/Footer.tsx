@@ -39,6 +39,7 @@ export function Footer() {
           </a>
         </li>
       </ul>
+
     </footer>
   );
 }

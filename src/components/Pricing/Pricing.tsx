@@ -14,7 +14,7 @@ export function Pricing() {
         <div className="single-pricing-container">
           <div className="glass-panel pricing-card featured single-card">
             <div className="card-badge">מבצע השקה!</div>
-            <h3 className="service-title">אתר תדמית פרימיום</h3>
+            <h3 className="service-title" style={{ marginTop: '1.5rem' }}>אתר תדמית פרימיום</h3>
             
             <div className="price-container">
               <span className="original-price">₪1,000</span>

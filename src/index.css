@@ -125,6 +125,45 @@ a {
   font-size: 1.25rem;
 }
 
+/* Accessibility Global Overrides */
+body.a11y-large-text {
+  font-size: 115% !important;
+}
+body.a11y-large-text h1, body.a11y-large-text h2, body.a11y-large-text h3 {
+  font-size: 125% !important;
+}
+body.a11y-large-text p, body.a11y-large-text a, body.a11y-large-text span {
+  font-size: 110% !important;
+}
+
+body.a11y-high-contrast {
+  background: #000 !important;
+  color: #fff !important;
+}
+body.a11y-high-contrast * {
+  background-color: #000 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+  box-shadow: none !important;
+}
+body.a11y-high-contrast a, body.a11y-high-contrast .gradient-text {
+  color: #ffff00 !important;
+  -webkit-text-fill-color: #ffff00 !important;
+  background: none !important;
+}
+body.a11y-high-contrast img {
+  filter: contrast(120%) grayscale(100%);
+}
+
+body.a11y-highlight-links a {
+  text-decoration: underline !important;
+  text-decoration-thickness: 3px !important;
+  text-decoration-color: #ffff00 !important;
+  background-color: #000 !important;
+  color: #ffff00 !important;
+  padding: 2px 4px;
+}
+
 .btn-primary {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #000;

@@ -37,7 +37,7 @@ export function Header() {
         </Link>
         
         {/* Desktop Nav */}
-        <nav className="nav">
+        <nav className="nav" aria-label="תפריט ראשי">
           <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''}>פרויקטים</Link>
           <Link to="/services" className={location.pathname === '/services' ? 'active-link' : ''}>שירותים</Link>
           <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''}>מחירים</Link>
@@ -52,7 +52,8 @@ export function Header() {
         <button 
           className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
           onClick={toggleMenu}
-          aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+          aria-label={isMenuOpen ? "סגור תפריט" : "פתח תפריט"}
         >
           <span></span>
           <span></span>
@@ -74,7 +75,7 @@ export function Header() {
             <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>פרויקטים</Link>
             <Link to="/services" className={location.pathname === '/services' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>שירותים</Link>
             <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מחירים</Link>
-            <Link to="/reviews" className={location.pathname === '/reviews' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>המלצות</Link>
+
             <Link to="/about" className={location.pathname === '/about' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מי אני?</Link>
             <Link to="/contact" className="btn-primary mobile-contact-btn" onClick={() => setIsMenuOpen(false)}>
               דברו איתי

@@ -11,6 +11,9 @@ import { Contact } from './components/Contact/Contact';
 import { Reviews } from './components/Reviews/Reviews';
 import { Pricing } from './components/Pricing/Pricing';
 import { AsiFooter } from './components/AsiFooter/AsiFooter';
+import { Accessibility } from './components/Accessibility/Accessibility';
+import { PrivacyPolicy } from './components/PrivacyPolicy/PrivacyPolicy';
+import { AccessibilityWidget } from './components/AccessibilityWidget/AccessibilityWidget';
 
 function App() {
   return (
@@ -51,10 +54,21 @@ function App() {
                 <Contact />
               </div>
             } />
+            <Route path="/accessibility" element={
+              <div className="page-padding">
+                <Accessibility />
+              </div>
+            } />
+            <Route path="/privacy" element={
+              <div className="page-padding">
+                <PrivacyPolicy />
+              </div>
+            } />
           </Routes>
         </main>
         <Footer />
         <AsiFooter />
+        <AccessibilityWidget />
       </div>
     </Router>
   );
