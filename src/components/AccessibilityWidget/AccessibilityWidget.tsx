@@ -9,7 +9,7 @@ export function AccessibilityWidget() {
 
   useEffect(() => {
     // Apply body classes
-    document.body.classList.toggle('a11y-large-text', largeText);
+    document.documentElement.classList.toggle('a11y-large-text', largeText);
     document.body.classList.toggle('a11y-high-contrast', highContrast);
     document.body.classList.toggle('a11y-highlight-links', highlightLinks);
   }, [largeText, highContrast, highlightLinks]);

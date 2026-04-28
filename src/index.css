@@ -126,14 +126,8 @@ a {
 }
 
 /* Accessibility Global Overrides */
-body.a11y-large-text {
+html.a11y-large-text {
   font-size: 115% !important;
-}
-body.a11y-large-text h1, body.a11y-large-text h2, body.a11y-large-text h3 {
-  font-size: 125% !important;
-}
-body.a11y-large-text p, body.a11y-large-text a, body.a11y-large-text span {
-  font-size: 110% !important;
 }
 
 body.a11y-high-contrast {
