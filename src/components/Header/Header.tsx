@@ -40,8 +40,8 @@ export function Header() {
         <nav className="nav" aria-label="תפריט ראשי">
           <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''}>פרויקטים</Link>
           <Link to="/services" className={location.pathname === '/services' ? 'active-link' : ''}>שירותים</Link>
-          <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''}>מחירים</Link>
-        
+          <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''}>מסלולים</Link>
+          <Link to="/faq" className={location.pathname === '/faq' ? 'active-link' : ''}>שאלות ותשובות</Link>
           <Link to="/about" className={location.pathname === '/about' ? 'active-link' : ''}>מי אני?</Link>
           <Link to="/contact" className="btn-primary" style={{ padding: '0.5rem 1.25rem' }}>
             דברו איתי
@@ -74,8 +74,8 @@ export function Header() {
             <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>בית</Link>
             <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>פרויקטים</Link>
             <Link to="/services" className={location.pathname === '/services' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>שירותים</Link>
-            <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מחירים</Link>
-
+            <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מסלולים</Link>
+            <Link to="/faq" className={location.pathname === '/faq' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>שאלות ותשובות</Link>
             <Link to="/about" className={location.pathname === '/about' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מי אני?</Link>
             <Link to="/contact" className="btn-primary mobile-contact-btn" onClick={() => setIsMenuOpen(false)}>
               דברו איתי

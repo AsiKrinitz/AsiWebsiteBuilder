@@ -27,8 +27,7 @@ export function Projects() {
                   style={{ marginBottom: '1.5rem', display: 'flex', gap: '8px', flexWrap: 'wrap' }}
                 >
                   <span className="tag">React</span>
-                  <span className="tag">TypeScript</span>
-                  <span className="tag">Vite</span>
+   
                 </div>
                 <div className="project-actions" style={{ display: 'flex' }}>
                   <a
@@ -63,8 +62,7 @@ export function Projects() {
                   style={{ marginBottom: '1.5rem', display: 'flex', gap: '8px', flexWrap: 'wrap' }}
                 >
                   <span className="tag">React</span>
-                  <span className="tag">Vite</span>
-                  <span className="tag">CSS3</span>
+       
                 </div>
                 <div className="project-actions" style={{ display: 'flex' }}>
                   <a
@@ -99,8 +97,7 @@ export function Projects() {
                   style={{ marginBottom: '1.5rem', display: 'flex', gap: '8px', flexWrap: 'wrap' }}
                 >
                   <span className="tag">React</span>
-                  <span className="tag">TypeScript</span>
-                  <span className="tag">Vite</span>
+         
                 </div>
                 <div className="project-actions" style={{ display: 'flex' }}>
                   <a
@@ -121,7 +118,7 @@ export function Projects() {
           <div className="glass-panel project-card" style={{ display: 'flex', flexDirection: 'column' }}>
             <div className="project-header" style={{ padding: '1.5rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
               <h3 className="service-title" style={{ color: 'var(--primary)', margin: 0, fontSize: '1.4rem' }}>
-                אתר תדמית אישי
+                אתר תדמית אישי - Portfolio
               </h3>
             </div>
             <div style={{ position: 'relative', flex: 1, overflow: 'hidden' }}>
@@ -135,7 +132,7 @@ export function Projects() {
                   style={{ marginBottom: '1.5rem', display: 'flex', gap: '8px', flexWrap: 'wrap' }}
                 >
                   <span className="tag">React</span>
-                  <span className="tag">Vite</span>
+             
                 </div>
                 <div className="project-actions" style={{ display: 'flex' }}>
                   <a

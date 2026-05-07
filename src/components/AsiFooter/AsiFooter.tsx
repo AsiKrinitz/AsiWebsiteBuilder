@@ -9,6 +9,8 @@ export function AsiFooter() {
           <Link to="/accessibility" onClick={() => window.scrollTo(0, 0)}>הצהרת נגישות</Link>
           <span className="separator">|</span>
           <Link to="/privacy" onClick={() => window.scrollTo(0, 0)}>מדיניות פרטיות</Link>
+          <span className="separator">|</span>
+          <Link to="/faq" onClick={() => window.scrollTo(0, 0)}>שאלות ותשובות</Link>
         </div>
         <p>
           האתר נבנה ומתוחזק ע"י{" "}

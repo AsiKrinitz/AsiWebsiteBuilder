@@ -6,20 +6,26 @@ export function Pricing() {
       <div className="container">
         <div className="pricing-header">
           <h2 className="section-title">
-            הצעה <span className="gradient-text">מנצחת</span>
+            בחרו את <span className="gradient-text">המסלול</span> שלכם
           </h2>
-          <p className="pricing-subtitle">כל מה שהעסק שלך צריך כדי לפרוץ קדימה, בחבילה אחת מושלמת.</p>
+          <p className="pricing-subtitle">אותו מוצר איכותי, שני מסלולי תשלום גמישים - בחרו את מה שמתאים לעסק שלכם.</p>
         </div>
         
-        <div className="single-pricing-container">
-          <div className="glass-panel pricing-card featured single-card">
-            <div className="card-badge">מבצע השקה!</div>
-            <h3 className="service-title" style={{ marginTop: '1.5rem' }}>אתר תדמית פרימיום</h3>
+        <div className="pricing-grid">
+          {/* Plan 1: One-time */}
+          <div className="glass-panel pricing-card featured">
+            <div className="card-badge">מסלול רכישה</div>
+            <h3 className="service-title" style={{ marginTop: '1.5rem' }}>אתר תדמית / דף נחיתה</h3>
             
             <div className="price-container">
               <span className="original-price">₪1,000</span>
-              <div className="price">₪700</div>
-              <span className="price-label">חד פעמי</span>
+              <div className="price">₪750</div>
+              <span className="price-label">תשלום חד פעמי (כולל מע"מ)</span>
+            </div>
+
+            <div className="maintenance-highlight">
+              <strong>תחזוקה ושינויים:</strong>
+              <p>חודש ראשון של שינויים בחינם. לאחר מכן, העבודה תתומחר לפי שעות במידת הצורך.</p>
             </div>
 
             <ul className="service-description">
@@ -27,47 +33,83 @@ export function Pricing() {
                 <span className="check-icon">✓</span>
                 <div>
                   <strong>עיצוב אישי וייחודי</strong>
-                  <p>עיצוב מותאם אישית לבחירתכם, המדגיש את הזהות העסקית שלכם.</p>
+                  <p>עיצוב מותאם אישית המדגיש את הזהות העסקית שלכם.</p>
                 </div>
               </li>
               <li>
-                <span className="check-icon">✓</span>
+                <span className="check-icon">⚡</span>
                 <div>
                   <strong>טכנולוגיה חדישה ומהירה</strong>
-                  <p>פיתוח בקוד נקי (React) לביצועים מקסימליים וחוויית משתמש חלקה.</p>
+                  <p>ביצועים ללא פשרות - אתר מהיר ויעיל שחוסך זמן לגולשים ומקדם אתכם בגוגל.</p>
+                </div>
+              </li>
+              <li>
+                <span className="check-icon">🛡️</span>
+                <div>
+                  <strong>אחסון + אבטחה + גיבויים</strong>
+                  <p>ראש שקט עם אחסון מאובטח וגיבויים שוטפים, ללא עלות חודשית.</p>
                 </div>
               </li>
               <li>
                 <span className="check-icon">✓</span>
                 <div>
                   <strong>אופטימיזציית SEO</strong>
-                  <p>בנייה נכונה לקידום בגוגל – מהיר וחזק יותר מאתרי וורדפרס כבדים.</p>
-                </div>
-              </li>
-              <li>
-                <span className="check-icon">✓</span>
-                <div>
-                  <strong>ליווי ברכישת דומיין</strong>
-                  <p>עזרה מלאה בבחירה ורכישת דומיין מותאם אישית לעסק.</p>
-                </div>
-              </li>
-              <li>
-                <span className="check-icon">✓</span>
-                <div>
-                  <strong>תשלום חד-פעמי</strong>
-                  <p>ללא דמי מנוי חודשיים. משלמים פעם אחת – והאתר שלכם לתמיד.</p>
-                </div>
-              </li>
-              <li>
-                <span className="check-icon">✓</span>
-                <div>
-                  <strong>ליווי אישי ומסור</strong>
-                  <p>ליווי אישי צמוד לאורך כל התהליך, עד שתהיו מרוצים ב-100% מהתוצאה הסופית.</p>
+                  <p>בנייה נכונה לקידום מקסימלי במנועי החיפוש.</p>
                 </div>
               </li>
             </ul>
 
-            <a href="/contact" className="btn-primary contact-btn">אני רוצה להתחיל</a>
+            <a href="/contact" className="btn-primary contact-btn">אני רוצה להתחיל!</a>
+          </div>
+
+          {/* Plan 2: Monthly */}
+          <div className="glass-panel pricing-card featured">
+            <div className="card-badge">מסלול צמיחה</div>
+            <h3 className="service-title" style={{ marginTop: '1.5rem' }}>אתר תדמית / דף נחיתה</h3>
+            
+            <div className="price-container">
+              <span className="original-price">₪550</span>
+              <div className="price">₪400</div>
+              <span className="price-label">לחודש (כולל מע"מ)</span>
+            </div>
+
+            <div className="maintenance-highlight">
+              <strong>תחזוקה ושינויים:</strong>
+              <p>שינויים ועדכונים כלולים במסלול ללא הגבלה וללא עלות נוספת!</p>
+            </div>
+
+            <ul className="service-description">
+              <li>
+                <span className="check-icon">✓</span>
+                <div>
+                  <strong>עיצוב אישי וייחודי</strong>
+                  <p>עיצוב מותאם אישית המדגיש את הזהות העסקית שלכם.</p>
+                </div>
+              </li>
+              <li>
+                <span className="check-icon">⚡</span>
+                <div>
+                  <strong>טכנולוגיה חדישה ומהירה</strong>
+                  <p>ביצועים ללא פשרות - אתר מהיר ויעיל שחוסך זמן לגולשים ומקדם אתכם בגוגל.</p>
+                </div>
+              </li>
+              <li>
+                <span className="check-icon">🛡️</span>
+                <div>
+                  <strong>אחסון + אבטחה + גיבויים</strong>
+                  <p>ראש שקט עם אחסון מאובטח וגיבויים שוטפים, הכל כלול במסלול.</p>
+                </div>
+              </li>
+              <li>
+                <span className="check-icon">✓</span>
+                <div>
+                  <strong>אופטימיזציית SEO</strong>
+                  <p>בנייה נכונה לקידום מקסימלי במנועי החיפוש.</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="/contact" className="btn-primary contact-btn">אני רוצה להתחיל!</a>
           </div>
         </div>
       </div>

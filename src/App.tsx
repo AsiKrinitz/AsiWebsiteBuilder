@@ -4,7 +4,6 @@ import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
 import { Home } from './components/Home/Home';
 import { Services } from './components/Services/Services';
-import { TechComparison } from './components/TechComparison/TechComparison';
 import { Projects } from './components/Projects/Projects';
 import { About } from './components/About/About';
 import { Contact } from './components/Contact/Contact';
@@ -14,6 +13,8 @@ import { AsiFooter } from './components/AsiFooter/AsiFooter';
 import { Accessibility } from './components/Accessibility/Accessibility';
 import { PrivacyPolicy } from './components/PrivacyPolicy/PrivacyPolicy';
 import { AccessibilityWidget } from './components/AccessibilityWidget/AccessibilityWidget';
+import { WhatsAppWidget } from './components/WhatsAppWidget/WhatsAppWidget';
+import { FAQ } from './components/FAQ/FAQ';
 
 function App() {
   return (
@@ -26,7 +27,6 @@ function App() {
             <Route path="/services" element={
               <div className="page-padding">
                 <Services />
-                <TechComparison />
               </div>
             } />
             <Route path="/projects" element={
@@ -54,6 +54,11 @@ function App() {
                 <Contact />
               </div>
             } />
+            <Route path="/faq" element={
+              <div className="page-padding">
+                <FAQ />
+              </div>
+            } />
             <Route path="/accessibility" element={
               <div className="page-padding">
                 <Accessibility />
@@ -69,6 +74,7 @@ function App() {
         <Footer />
         <AsiFooter />
         <AccessibilityWidget />
+        <WhatsAppWidget />
       </div>
     </Router>
   );

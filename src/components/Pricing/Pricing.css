@@ -14,20 +14,30 @@
   margin-bottom: 2rem;
 }
 
-.single-pricing-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 1000px;
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
-.single-card {
-  max-width: 600px;
-  width: 100%;
-  padding: 4rem 3rem !important;
+.pricing-card {
+  padding: 3rem 2rem;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+}
+
+.pricing-card.featured {
   border: 1px solid var(--primary-glow) !important;
   box-shadow: 0 0 50px rgba(0, 242, 255, 0.1) !important;
+  background: rgba(20, 20, 20, 0.6);
 }
 
 .card-badge {
@@ -37,29 +47,57 @@
   transform: translateX(-50%);
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: #000;
-  padding: 0.5rem 1.5rem;
+  padding: 0.4rem 1.25rem;
   border-radius: 50px;
   font-weight: 800;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   box-shadow: 0 4px 15px var(--primary-glow);
+  white-space: nowrap;
+}
+
+.maintenance-highlight {
+  background: rgba(187, 134, 252, 0.1);
+  border-right: 3px solid var(--primary);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.maintenance-highlight strong {
+  display: block;
+  color: var(--primary);
+  font-size: 0.95rem;
+  margin-bottom: 0.25rem;
+}
+
+.maintenance-highlight p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-main);
+  line-height: 1.4;
 }
 
 .price-container {
   text-align: center;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
+  min-height: 110px; /* Ensure both cards have same height for price section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .original-price {
   text-decoration: line-through;
   color: var(--text-muted);
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   opacity: 0.6;
+  height: 1.5rem; /* Reserve space even if empty */
 }
 
 .price {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 1;
   color: var(--text-main);
@@ -69,63 +107,60 @@
 .price-label {
   color: var(--primary);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   letter-spacing: 1px;
 }
 
 .service-description {
   list-style: none;
   padding: 0;
-  margin: 2rem 0 3rem;
+  margin: 1.5rem 0 2.5rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
+  flex-grow: 1;
 }
 
 .service-description li {
   display: flex;
-  gap: 1.25rem;
+  gap: 1rem;
   align-items: flex-start;
 }
 
 .check-icon {
   color: var(--primary);
   font-weight: 900;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   flex-shrink: 0;
-  margin-top: 2px;
 }
 
 .service-description strong {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   color: var(--text-main);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.2rem;
 }
 
 .service-description p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .contact-btn {
   width: 100%;
-  padding: 1.25rem !important;
-  font-size: 1.25rem !important;
+  padding: 1rem !important;
+  font-size: 1.1rem !important;
+  text-align: center;
 }
 
-@media (max-width: 600px) {
-  .single-card {
-    padding: 3rem 1.5rem !important;
+@media (max-width: 768px) {
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    max-width: 450px;
   }
   
   .price {
-    font-size: 4rem;
-  }
-  
-  .pricing-subtitle {
-    margin-top: -2rem;
-    font-size: 1rem;
+    font-size: 3.5rem;
   }
 }
