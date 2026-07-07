@@ -19,8 +19,8 @@ export function Pricing() {
             
             <div className="price-container">
               <span className="original-price">₪1,000</span>
-              <div className="price">₪750</div>
-              <span className="price-label">תשלום חד פעמי (כולל מע"מ)</span>
+              <div className="price">₪700</div>
+              <span className="price-label">תשלום חד פעמי</span>
             </div>
 
             <div className="maintenance-highlight">
@@ -69,8 +69,8 @@ export function Pricing() {
             
             <div className="price-container">
               <span className="original-price">₪550</span>
-              <div className="price">₪400</div>
-              <span className="price-label">לחודש (כולל מע"מ)</span>
+              <div className="price">₪300</div>
+              <span className="price-label">לחודש (בהתחייבות לחצי שנה)</span>
             </div>
 
             <div className="maintenance-highlight">

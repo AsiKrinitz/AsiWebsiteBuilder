@@ -136,7 +136,41 @@ export function Projects() {
                 </div>
                 <div className="project-actions" style={{ display: 'flex' }}>
                   <a
-                    href="https://AsiKrinitz.github.io/ReactProject"
+                    href="https://AsiKrinitz.github.io/AsiWebsite"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                    style={{ width: '100%' }}
+                  >
+                    לאתר
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Project 5: אלבום תמונות לכלבים המתוקים שלי */}
+          <div className="glass-panel project-card" style={{ display: 'flex', flexDirection: 'column' }}>
+            <div className="project-header" style={{ padding: '1.5rem', textAlign: 'center', borderBottom: '1px solid rgba(255,255,255,0.05)' }}>
+              <h3 className="service-title" style={{ color: 'var(--primary)', margin: 0, fontSize: '1.4rem' }}>
+                אלבום תמונות לכלבים המתוקים שלי
+              </h3>
+            </div>
+            <div style={{ position: 'relative', flex: 1, overflow: 'hidden' }}>
+              <img src="/dogsSite.png" alt="אלבום תמונות לכלבים המתוקים שלי" className="project-image" />
+              <div className="project-overlay">
+                <p className="project-desc">
+                  אתר גלריה חמוד המציג אלבום תמונות של הכלבים המתוקים שלי, עם עיצוב פשוט ונעים לעין.
+                </p>
+                <div
+                  className="tech-stack"
+                  style={{ marginBottom: '1.5rem', display: 'flex', gap: '8px', flexWrap: 'wrap' }}
+                >
+                  <span className="tag">React</span>
+                </div>
+                <div className="project-actions" style={{ display: 'flex' }}>
+                  <a
+                    href="https://asikrinitz.github.io/DogsSite/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary"
