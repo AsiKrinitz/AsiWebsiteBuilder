@@ -10,21 +10,10 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.contact-form {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-  margin-top: 3rem;
-}
-
 .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
-}
-
-.form-group.full-width {
-  grid-column: span 2;
 }
 
 .form-label {
@@ -53,14 +42,6 @@
 }
 
 @media (max-width: 768px) {
-  .contact-form {
-    grid-template-columns: 1fr;
-  }
-
-  .form-group.full-width {
-    grid-column: span 1;
-  }
-
   .contact-box {
     padding: 3rem 1.5rem;
   }

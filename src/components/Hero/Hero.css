@@ -58,13 +58,17 @@
 .hero-content {
   position: relative;
   z-index: 1;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 3rem;
+  text-align: center;
 }
 
 .hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   animation: fade-in-up 1s ease-out;
 }
 
@@ -90,57 +94,54 @@
 .hero-subtitle {
   font-size: clamp(1.1rem, 2vw, 1.4rem);
   color: var(--text-muted);
-  margin-bottom: 3rem;
+  margin: 0 auto 3rem;
   max-width: 600px;
   line-height: 1.6;
 }
 
 .hero-buttons {
   display: flex;
+  justify-content: center;
   gap: 1.5rem;
 }
 
-.hero-image-wrapper {
+.hero-video-wrapper {
   position: relative;
-  animation: float-hero 6s infinite ease-in-out;
+  width: 100%;
+  max-width: 950px;
+  margin-top: 2.5rem;
 }
 
-@keyframes float-hero {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-30px);
-  }
-}
-
-.image-presentation {
+.video-presentation {
   position: relative;
+  cursor: pointer;
 }
 
-.image-presentation::before {
+.video-presentation::before {
   content: '';
   position: absolute;
   inset: -20px;
   background: linear-gradient(135deg, var(--primary), var(--secondary));
-  filter: blur(40px);
-  opacity: 0.3;
+  filter: blur(50px);
+  opacity: 0.4;
   z-index: -1;
-  border-radius: 30px;
+  border-radius: 40px;
 }
 
-.hero-avatar {
+.hero-video {
   width: 100%;
+  display: block;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
   border-radius: 30px;
-  box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.7);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 40px 80px -20px rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.15);
   transition: var(--transition-smooth);
 }
 
-.hero-avatar:hover {
+.video-presentation:hover .hero-video {
   transform: scale(1.02);
-  border: 1px solid var(--primary);
+  border: 2px solid var(--primary);
 }
 
 @media (max-width: 1024px) {
@@ -151,19 +152,7 @@
   }
 
   .hero-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-    gap: 4rem;
-  }
-
-  .hero-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-subtitle {
-    margin: 0 auto 3rem;
+    gap: 3rem;
   }
 }
 

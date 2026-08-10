@@ -6,19 +6,27 @@ export function About() {
       <div className="container">
         <div className="about-content">
           <div className="about-text">
-            <h2 className="section-title" style={{ textAlign: 'right' }}>
+            <h2 className="section-title about-title">
               נעים להכיר, <span className="gradient-text">אסי</span>
             </h2>
             <p>
-              אני הנדסאי תוכנה מוסמך עם ניסיון של מעל 3 שנים בעולם הפיתוח. במהלך השנים צברתי מומחיות כפיתוח פול-סטאק תוך התמקדות ביצירת חוויות דיגיטליות יוצאות דופן, מהירות ומעוצבות.
+              אני מתכנת במקצועי כבר יותר מ-4 שנים, ומתעסק כל יום בפיתוח אתרים ומערכות. במהלך השנים צברתי ניסיון עשיר בפיתוח אתרים ומערכות מקצה לקצה, תוך התמקדות ביצירת חוויות דיגיטליות יוצאות דופן, מהירות ומעוצבות.
             </p>
             <br />
             <p>
-              אני מתמחה בבניית אתרים מודרניים תוך שימוש בטכנולוגיות המתקדמות ביותר בשוק, במטרה לעזור לעסקים לצמוח בעזרת נוכחות דיגיטלית חזקה, עיצוב יוקרתי וקוד נקי שגוגל אוהב.
+              לאחרונה החלטתי ללכת אחרי החלום שלי, והקמתי עסק עצמאי המתמחה בבניית אתרי תדמית לעסקים - עם עיצוב אישי ומותאם אישית, ושימוש בטכנולוגיה הטובה ביותר שקיימת כיום בשוק.
+            </p>
+            <br />
+            <p>
+              המטרה שלי היא לעזור לעסקים לצמוח בעזרת נוכחות דיגיטלית חזקה, עיצוב יוקרתי וקוד נקי שגוגל אוהב.
             </p>
           </div>
-          <div className="image-presentation" style={{ maxWidth: '500px', margin: '0 auto' }}>
-            <img src="/asiNiceOffice.jpeg" alt="Asi Krinitz - Professional Web Development" className="hero-avatar" />
+          <div className="about-image-wrapper">
+            <img
+              src="/asiNiceOffice.jpeg"
+              alt="Asi Krinitz - Professional Web Development"
+              className="about-image"
+            />
           </div>
         </div>
       </div>

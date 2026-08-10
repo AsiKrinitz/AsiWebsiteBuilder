@@ -1,6 +1,6 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import './Header.css';
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "./Header.css";
 
 export function Header() {
   const location = useLocation();
@@ -14,14 +14,14 @@ export function Header() {
   // Prevent scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
   }, [isMenuOpen]);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.scrollTo({ top: 0, behavior: "smooth" });
     setIsMenuOpen(false);
   };
 
@@ -33,25 +33,63 @@ export function Header() {
     <header className="header">
       <div className="container header-content">
         <Link to="/" className="logo" onClick={scrollToTop}>
-          <img src="/ak_logo2.png" alt="ASI Design Logo" style={{ height: '80px', objectFit: 'contain' }} />
+          <img
+            src="/ak_logo_noBG.png"
+            alt="ASI Design Logo"
+            style={{ height: "80px", objectFit: "contain" }}
+          />
         </Link>
-        
+
         {/* Desktop Nav */}
         <nav className="nav" aria-label="תפריט ראשי">
-          <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''}>פרויקטים</Link>
-          <Link to="/services" className={location.pathname === '/services' ? 'active-link' : ''}>שירותים</Link>
-          <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''}>מסלולים</Link>
-          <Link to="/reviews" className={location.pathname === '/reviews' ? 'active-link' : ''}>המלצות</Link>
-          <Link to="/faq" className={location.pathname === '/faq' ? 'active-link' : ''}>שאלות ותשובות</Link>
-          <Link to="/about" className={location.pathname === '/about' ? 'active-link' : ''}>מי אני?</Link>
-          <Link to="/contact" className="btn-primary" style={{ padding: '0.5rem 1.25rem' }}>
+          <Link
+            to="/projects"
+            className={location.pathname === "/projects" ? "active-link" : ""}
+          >
+            פרויקטים
+          </Link>
+          <Link
+            to="/services"
+            className={location.pathname === "/services" ? "active-link" : ""}
+          >
+            שירותים
+          </Link>
+          <Link
+            to="/pricing"
+            className={location.pathname === "/pricing" ? "active-link" : ""}
+          >
+            מסלולים
+          </Link>
+          <Link
+            to="/reviews"
+            className={location.pathname === "/reviews" ? "active-link" : ""}
+          >
+            המלצות
+          </Link>
+          <Link
+            to="/faq"
+            className={location.pathname === "/faq" ? "active-link" : ""}
+          >
+            שאלות ותשובות
+          </Link>
+          <Link
+            to="/about"
+            className={location.pathname === "/about" ? "active-link" : ""}
+          >
+            מי אני?
+          </Link>
+          <Link
+            to="/contact"
+            className="btn-primary"
+            style={{ padding: "0.5rem 1.25rem" }}
+          >
             דברו איתי
           </Link>
         </nav>
 
         {/* Hamburger Button */}
-        <button 
-          className={`hamburger ${isMenuOpen ? 'active' : ''}`} 
+        <button
+          className={`hamburger ${isMenuOpen ? "active" : ""}`}
           onClick={toggleMenu}
           aria-expanded={isMenuOpen}
           aria-label={isMenuOpen ? "סגור תפריט" : "פתח תפריט"}
@@ -62,24 +100,77 @@ export function Header() {
         </button>
 
         {/* Mobile Nav Overlay */}
-        <div className={`mobile-nav-overlay ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}></div>
-        
+        <div
+          className={`mobile-nav-overlay ${isMenuOpen ? "active" : ""}`}
+          onClick={() => setIsMenuOpen(false)}
+        ></div>
+
         {/* Mobile Nav Menu */}
-        <nav className={`mobile-nav ${isMenuOpen ? 'active' : ''}`}>
+        <nav className={`mobile-nav ${isMenuOpen ? "active" : ""}`}>
           <div className="mobile-nav-header">
             <Link to="/" className="logo mobile-logo" onClick={scrollToTop}>
-              <img src="/ak_logo2.png" alt="ASI Design Logo" style={{ height: '70px', objectFit: 'contain' }} />
+              <img
+                src="/ak_logo_noBG.png"
+                alt="ASI Design Logo"
+                style={{ height: "70px", objectFit: "contain" }}
+              />
             </Link>
           </div>
           <div className="mobile-nav-links">
-            <Link to="/" className={location.pathname === '/' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>בית</Link>
-            <Link to="/projects" className={location.pathname === '/projects' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>פרויקטים</Link>
-            <Link to="/services" className={location.pathname === '/services' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>שירותים</Link>
-            <Link to="/pricing" className={location.pathname === '/pricing' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מסלולים</Link>
-            <Link to="/reviews" className={location.pathname === '/reviews' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>המלצות</Link>
-            <Link to="/faq" className={location.pathname === '/faq' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>שאלות ותשובות</Link>
-            <Link to="/about" className={location.pathname === '/about' ? 'active-link' : ''} onClick={() => setIsMenuOpen(false)}>מי אני?</Link>
-            <Link to="/contact" className="btn-primary mobile-contact-btn" onClick={() => setIsMenuOpen(false)}>
+            <Link
+              to="/"
+              className={location.pathname === "/" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              בית
+            </Link>
+            <Link
+              to="/projects"
+              className={location.pathname === "/projects" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              פרויקטים
+            </Link>
+            <Link
+              to="/services"
+              className={location.pathname === "/services" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              שירותים
+            </Link>
+            <Link
+              to="/pricing"
+              className={location.pathname === "/pricing" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              מסלולים
+            </Link>
+            <Link
+              to="/reviews"
+              className={location.pathname === "/reviews" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              המלצות
+            </Link>
+            <Link
+              to="/faq"
+              className={location.pathname === "/faq" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              שאלות ותשובות
+            </Link>
+            <Link
+              to="/about"
+              className={location.pathname === "/about" ? "active-link" : ""}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              מי אני?
+            </Link>
+            <Link
+              to="/contact"
+              className="btn-primary mobile-contact-btn"
+              onClick={() => setIsMenuOpen(false)}
+            >
               דברו איתי
             </Link>
           </div>
