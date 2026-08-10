@@ -3,34 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <!-- Favicon configurations based on Google Search requirements -->
-    <link rel="icon" type="image/png" href="/ak_logoForGoogle.png" sizes="192x192" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="/ak_logoForGoogle.png"
+      sizes="192x192"
+    />
     <link rel="apple-touch-icon" sizes="180x180" href="/ak_logoForGoogle.png" />
     <meta name="apple-mobile-web-app-title" content="Asi Design" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>אסי קריניץ | בניית אתרים ודפי נחיתה לעסקים</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800;900&family=Inter:wght@400;600;800;900&display=swap" rel="stylesheet">
-    <meta name="description" content="אסי קריניץ - ASI DESIGN | בניית אתרי תדמית, דפי נחיתה וחוויות דיגיטליות לעסקים.">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;800;900&family=Inter:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <meta
+      name="description"
+      content="אסי קריניץ - ASI DESIGN | בניית אתרי תדמית, דפי נחיתה וחוויות דיגיטליות לעסקים."
+    />
     <!-- Start Single Page Apps for GitHub Pages -->
     <script type="text/javascript">
-      (function(l) {
-        if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
-            return s.replace(/~and~/g, '&')
-          }).join('?');
-          window.history.replaceState(null, null,
-              l.pathname.slice(0, -1) + decoded + l.hash
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash,
           );
         }
-      }(window.location))
+      })(window.location);
     </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "1108788268161143");
+      fbq("track", "PageView");
+    </script>
+    <!-- End Meta Pixel Code -->
     <!-- End Single Page Apps for GitHub Pages -->
     <script type="module" crossorigin src="/assets/index-p66ftvPU.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-BL8XQEUb.css">
   </head>
   <body>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=1108788268161143&ev=PageView&noscript=1"
+    /></noscript>
     <div id="root"></div>
   </body>
 </html>
